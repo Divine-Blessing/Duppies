@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Patua+One&family=Poppins&family=Raleway&family=Special+Elite&display=swap');
+/* 
+font-family: 'Festive', cursive;
+font-family: 'Patua One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Special Elite', cursive;
+ */
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span{
+    color: tomato;
+}
+.invinsible{
+    visibility: hidden;
+}
+
+
+/* index.html */
+/* header */
+header{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+.logo{
+    color: black;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.logo h3{
+    font-style: italic;
+}
+.logo:hover{
+    color: rgb(0, 0, 0, 0.5);
+}
+.logo:hover span{
+    color: rgb(255, 99, 71, 0.7);
+}
+header .right a{
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    position: relative;
+}
+header .right a::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    position: absolute;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in;
+}
+header .right a:hover:after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* end of header */
+
+/* hero section */
+#main{
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+#main video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+#main .cover{
+    position: relative;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 200px;
+    width: 500px;
+    border-radius: 0 70px 0  70px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 20px  black;
+}
+#main .cover a{
+    color: turquoise;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 2px;
+}
+#main .cover a:hover{
+    color: tomato;
+}
+#main .cover p{
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    font-family: 'Raleway', sans-serif;
+}
+/* end of hero section */
+
+/* testimony section */
+#about{
+    min-height: 70vh;
+    width: 100%;
+    /* background: linear-gradient(to right, rgb(163, 224, 218), tomato ); */
+    background: linear-gradient(to right, rgb(163, 224, 218), rgba(255, 99, 71, 0.397) );
+}
+#about .left{
+    width: 50%;
+    /* background: rgb(255, 255, 255, 0.5); */
+    box-shadow: 10px 10px 30px currentColor;
+    border: 2px solid rgb(163, 224, 218, 0.5);
+    border-radius: 60px;
+    height: 300px;
+    width: 400px;
+    padding: 0 20px;
+}
+#about h1{
+    font-size: 25px;
+}
+#about h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+#about .right{
+    width: 50%;
+    /* background: rgb(255, 255, 255, 0.5); */
+    box-shadow: 10px 10px 30px currentColor;
+    border: 2px solid rgba(163, 224, 218, 0.5);
+    border-radius: 60px;
+    height: 300px;
+    width: 400px;
+    padding: 0 20px;
+}
+/* end of testimony section */
+
+
+/* review section */
+#review{
+    min-height: 60vh;
+    background: linear-gradient(to right, rgb(163, 224, 218), rgba(255, 99, 71, 0.397) );
+    color: black;
+}
+#review .counter{
+    font-size: 40px;
+    font-weight: 400;
+    /* color: white; */
+}
+#review .fas{
+    /* color: white; */
+    font-size: 30px;
+}
+#review h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+/* #review span{
+    color: white;
+} */
+#review hr{
+    height: 2px;
+}
+/* end of review section */
+
+
+/* care section */
+#care{
+    /* background: linear-gradient(to right, rgb(163, 224, 218), tomato); */
+    background: linear-gradient(to right, rgb(163, 224, 218), rgba(255, 99, 71, 0.397));
+    width: 100%;
+}
+#care h2{
+    font-size: 20px;
+}
+#care .top .one, #care .top .two, #care .top .three, #care .top .four,
+#care .bottom .one, #care .bottom .two, #care .bottom .three, #care .bottom .four{
+    height: 230px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#care .top .one{
+    background: black;
+    color: white;
+}
+#care .top .one h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+#care .top .one img{
+    padding-right: 150px;
+}
+#care .top .three{
+    background: url(../img/couple-4891783_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#care .bottom .two{
+    background: url(../img/friends-g1b5153659_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+#care .bottom .four{
+    background: url(../img/dog-g33dc3a9a7_1280.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+/* end of care section */
+
+
+/* cute section */
+#cute{
+    background: linear-gradient(to right, rgb(163, 224, 218), rgba(255, 99, 71, 0.397));
+    min-height: 80vh;
+}
+#cute h1{
+    font-size: 20px;
+    letter-spacing: 5px;
+    width: 92%;
+    padding-top: 250px;
+    font-weight: 400;
+}
+#cute h2{
+    font-size: 28px;
+    font-weight: 500;
+    width: 100%;
+    padding-right: 25px;
+}
+#cute h3{
+    font-weight: 400;
+    font-size: 20px;
+    width: 90%;
+    padding-top: 120px;
+}
+#cute .one, #cute .two, #cute .three{
+    height: 400px;
+    width: 400px;
+}
+#cute .one, #cute .three{
+    border: 1px solid rgba(0, 0, 0, 0.034);
+}
+#cute .one{
+    text-align: right;
+}
+#cute .two {
+    background: url(../img/dog-1468750_1920.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+}
+#cute .three{
+    padding: 25px;
+}
+#cute a{
+    color: black;
+}
+#cute .three .icon .fab{
+    font-size: 20px;
+    padding: 10px 8px;
+}
+#cute .three .icon .fab:hover{
+    cursor: pointer;
+}
+#cute .three .icon .face .fab:hover{
+    color: rgba(0, 0, 255, 0.575);
+}
+#cute .three .icon .twi .fab:hover{
+    color: white;
+}
+#cute .three .icon .insta .fab:hover{
+    color: rgb(218, 65, 86);
+}
+#cute .three .icon .you .fab:hover{
+    color: red;
+}
+
+/* end of cute section */
+
+
+/* contact section */
+#contact{
+    /* background: rgb(163, 224, 218); */
+    background: linear-gradient(to right, rgb(163, 224, 218), rgba(255, 99, 71, 0.397));
+    position: relative;
+}
+#contact .line{
+    height: 60px;
+    width: 100%;
+    background-color: tomato;
+    margin-top: 180px;
+}
+#contact .reach{
+    position: absolute;
+    background-color: rgb(83, 119, 116);
+    height: 350px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+#contact .display-6{
+    font-weight: 400;
+}
+#contact a{
+    color: black;
+}
+#contact h6{
+    font-size: 17px;
+    font-weight: 500;
+}
+#contact .phone:hover h6,
+#contact .instagram:hover h6,
+#contact .email:hover h6,
+#contact .twitter:hover h6,
+#contact .address:hover h6{
+    color: rgb(61, 57, 56);
+}
+#contact .phone:hover .fas,
+#contact .instagram:hover .fab,
+#contact .email:hover .fas,
+#contact .twitter:hover .fab,
+#contact .address:hover .fas
+{
+    visibility: visible;
+    font-size: 17px;
+}
+#contact .fas,
+#contact .fab{
+color: tomato;
+}
+#contact .fab{
+    font-weight: 600;
+}
+#contact .btn{
+    border: 2px solid tomato;
+    text-shadow: 0 0 0.125em hsl(0, 0%, 100%, 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.05em 0, 0 0 0.1em 0 ;
+    width: 250px;
+}
+#contact .btn:hover{
+    border: transparent;
+    color: tomato;
+}
+.form-control{
+    width: 400px;
+    border: 2px solid tomato;
+}
+/* end of contact section */
+
+/* extra section */
+#extra{
+    min-height: 10vh;
+    background: linear-gradient(to right, rgb(163, 224, 218), rgba(255, 99, 71, 0.397));
+}
+/* end of extra section */
+/* end of index.html */
+
+
+/* gallery.html */
+/* header section */
+header{
+    /* background: linear-gradient(to right, rgb(163, 224, 218), rgba(255, 99, 71, 0.397)); */
+    background: rgba(37, 134, 125, 0.514);
+}
+.head .right a{
+    color: black;
+}
+/* end of header section */
+
+/* gallery section */
+#gallery{
+    background-image: url(../img/background-5030087_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#gallery .one, #gallery .two, #gallery .three, #gallery .four{
+    height: 230px;
+    width: 230px;
+    margin: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.027);
+    box-shadow: 5px 5px 15px currentColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gallery a{
+    color: black;
+}
+#gallery img{
+    height: 130px;
+    width: 200px;
+}
+#gallery h2{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+    letter-spacing: .5px;
+    text-align: center;
+}
+#gallery .one:hover, #gallery .two:hover, #gallery .three:hover, #gallery .four:hover{
+    cursor: pointer;
+}
+/* end of gallery section */
+/* end of gallery.html */
+
+
+/* beagler section */
+#dogs{
+    min-height: 90vh;
+    background-image: url(../img/background-5030087_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#dogs .one{
+    height: 430px;
+    width: 430px;
+    margin: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.027);
+    box-shadow: 5px 5px 15px currentColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dogs a{
+    color: black;
+}
+#dogs img{
+    height: 200px;
+    width: 270px;
+    margin-bottom: 20px;
+}
+#dogs a h2{
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+    margin: 5px 0;
+    letter-spacing: .5px;
+    text-align: center;
+}
+/* end of beagler section */
+/* bulldog section */
+/* end of bulldog section */
